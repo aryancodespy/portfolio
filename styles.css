@@ -2,7 +2,7 @@
 
 /* Reset Default Settings */
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 20px 10%;
+	padding: 20px 5%; /* Modified padding for smaller screens */
 	background: rgba(8, 27, 41, 0.9);
 	display: flex;
 	justify-content: space-between;
@@ -44,7 +44,7 @@ body {
 	color: #ededed;
 	text-decoration: none;
 	font-weight: 500;
-	margin-left: 35px;
+	margin-left: 20px; /* Modified margin for smaller screens */
 	transition: 0.3s;
 }
 
@@ -61,10 +61,10 @@ body {
 /* Home Section */
 
 .home {
-	height: 100vh;
+	min-height: 100vh; /* Modified height to accommodate smaller screens */
 	display: flex;
 	align-items: center;
-	padding: 0 10%;
+	padding: 0 5%; /* Modified padding for smaller screens */
 }
 
 .home-content {
@@ -72,14 +72,14 @@ body {
 }
 
 .home-content h1 {
-	font-size: 56px;
+	font-size: 40px; /* Modified font size for smaller screens */
 	font-weight: 700;
 	line-height: 1.2;
 	position: relative;
 }
 
 .home-content h3 {
-	font-size: 32px;
+	font-size: 24px; /* Modified font size for smaller screens */
 	font-weight: 700px;
 	color: #00abf0;
 	position: relative;
@@ -87,13 +87,13 @@ body {
 
 .home-content p {
 	font-size: 16px;
-	margin: 20px 0 40px;
+	margin: 20px 0 30px; /* Modified margin for smaller screens */
 	position: relative;
 }
 
 .home-content .btn-box {
-	width: 345px;
-	height: 50px;
+	width: 300px; /* Modified width for smaller screens */
+	height: 40px; /* Modified height for smaller screens */
 	display: flex;
 	justify-content: space-between;
 	position: relative;
@@ -104,12 +104,12 @@ body {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 150px;
+	width: 120px; /* Modified width for smaller screens */
 	height: 100%;
 	background: #00abf0;
 	border: 2px solid #00abf0;
 	border-radius: 10px;
-	font-size: 19px;
+	font-size: 16px; /* Modified font size for smaller screens */
 	color: #081b29;
 	text-decoration: none;
 	font-weight: 600;
@@ -154,8 +154,8 @@ body {
 
 .home-sci {
 	position: absolute;
-	bottom: 40px;
-	width: 200px;
+	bottom: 30px; /* Modified bottom position for smaller screens */
+	width: 160px; /* Modified width for smaller screens */
 	display: flex;
 	justify-content: space-between;
 }
@@ -165,12 +165,12 @@ body {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 40px;
-	height: 40px;
+	width: 30px; /* Modified width for smaller screens */
+	height: 30px; /* Modified height for smaller screens */
 	background: transparent;
 	border: 2px solid #00abf0;
 	border-radius: 50%;
-	font-size: 20px;
+	font-size: 18px; /* Modified font size for smaller screens */
 	color: #00abf0;
 	text-decoration: none;
 	z-index: 1;
@@ -270,8 +270,107 @@ body {
 }
 
 /* Keyframes */
+
 @keyframes showRight {
 	100% {
 		width: 0;
+	}
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+	.header {
+		padding: 20px 3%;
+	}
+
+	.navbar a {
+		margin-left: 15px;
+	}
+
+	.home {
+		padding: 0 3%;
+	}
+
+	.home-content h1 {
+		font-size: 32px;
+	}
+
+	.home-content h3 {
+		font-size: 20px;
+	}
+
+	.home-content p {
+		margin-bottom: 20px;
+	}
+
+	.home-content .btn-box {
+		width: 250px;
+		height: 35px;
+	}
+
+	.btn-box a {
+		width: 100px;
+		font-size: 14px;
+	}
+
+	.home-sci {
+		bottom: 20px;
+		width: 120px;
+	}
+
+	.home-sci a {
+		width: 25px;
+		height: 25px;
+		font-size: 16px;
+		border: 1px solid #00abf0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.header {
+		padding: 15px 3%;
+	}
+
+	.navbar a {
+		margin-left: 10px;
+	}
+
+	.home {
+		padding: 0 3%;
+	}
+
+	.home-content h1 {
+		font-size: 28px;
+	}
+
+	.home-content h3 {
+		font-size: 18px;
+	}
+
+	.home-content p {
+		margin-bottom: 15px;
+	}
+
+	.home-content .btn-box {
+		width: 200px;
+		height: 30px;
+	}
+
+	.btn-box a {
+		width: 90px;
+		font-size: 12px;
+	}
+
+	.home-sci {
+		bottom: 15px;
+		width: 100px;
+	}
+
+	.home-sci a {
+		width: 20px;
+		height: 20px;
+		font-size: 14px;
+		border: 1px solid #00abf0;
 	}
 }
