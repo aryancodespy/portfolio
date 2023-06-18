@@ -66,7 +66,7 @@ body {
 	min-height: 100vh; /* Modified height to accommodate smaller screens */
 	display: flex;
 	align-items: center;
-	padding: 0 5%; /* Modified padding for smaller screens */
+	padding: 0 10%; 
 }
 
 .services {
@@ -87,18 +87,18 @@ body {
 .home-content h1,
 .about-content h1,
 .services-content h1 {
-	font-size: 40px; /* Modified font size for smaller screens */
-	font-weight: 700;
-	line-height: 1.2;
-	position: relative;
+	font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
 }
 
 .home-content h3,
 .services .services-content .service-card h3 {
-	font-size: 24px; /* Modified font size for smaller screens */
-	font-weight: 700px;
-	color: #00abf0;
-	position: relative;
+	font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    position: relative;
 }
 
 .service-card h3 {
@@ -109,8 +109,8 @@ body {
 .about-content p,
 .services .services-content .service-card p{
 	font-size: 16px;
-	margin: 20px 0 30px; /* Modified margin for smaller screens */
-	position: relative;
+    margin: 20px 0 40px;
+    position: relative;
 }
 
 .service-card {
@@ -127,111 +127,112 @@ body {
 }
 
 .home-content .btn-box {
-	width: 300px; /* Modified width for smaller screens */
-	height: 40px; /* Modified height for smaller screens */
-	display: flex;
-	justify-content: space-between;
-	position: relative;
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
+
 .btn-box a {
-	position: relative;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 120px; /* Modified width for smaller screens */
-	height: 100%;
-	background: #00abf0;
-	border: 2px solid #00abf0;
-	border-radius: 10px;
-	font-size: 16px; /* Modified font size for smaller screens */
-	color: #081b29;
-	text-decoration: none;
-	font-weight: 600;
-	letter-spacing: 1px;
-	z-index: 1;
-	overflow: hidden;
-	transition: 0.5s;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 .btn-box a:hover {
-	color: #00abf0;
+    color: #00abf0;
 }
 
 .btn-box a:nth-child(2) {
-	background: transparent;
-	color: #00abf0;
+    background: transparent;
+    color: #00abf0;
 }
 
 .btn-box a:nth-child(2):hover {
-	color: #081b29;
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
 }
 
 .btn-box a::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	background: #081b29;
-	z-index: -1;
-	transition: 0.5s;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.5s;
 }
 
 .btn-box a:hover::before {
-	width: 100%;
-}
-
-.btn-box a:nth-child(2)::before {
-	background: #00abf0;
+    width: 100%;
 }
 
 .home-sci {
-	position: absolute;
-	bottom: 30px; /* Modified bottom position for smaller screens */
-	width: 160px; /* Modified width for smaller screens */
-	display: flex;
-	justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .home-sci a {
-	position: relative;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 40px;
-	height: 40px; 
-	background: transparent;
-	border: 2px solid #00abf0;
-	border-radius: 50%;
-	font-size: 18px; /* Modified font size for smaller screens */
-	color: #00abf0;
-	text-decoration: none;
-	z-index: 1;
-	overflow: hidden;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 .home-sci a:hover {
-	color: #081b29;
+    color: #081b29;
 }
 
 .home-sci a::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	background: #00abf0;
-	z-index: -1;
-	transition: 0.3s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.3s;
 }
 
 .home-sci a:hover::before {
-	width: 100%;
+    width: 100%;
 }
-
 /* Transitions and Animations */
 
 .logo::before,
