@@ -58,20 +58,23 @@ body {
 	display: none;
 }
 
-/* Home Section */
+/* Sections */
 
-.home {
+.home,
+.about {
 	min-height: 100vh; /* Modified height to accommodate smaller screens */
 	display: flex;
 	align-items: center;
 	padding: 0 5%; /* Modified padding for smaller screens */
 }
 
-.home-content {
+.home-content,
+.about-content {
 	max-width: 600px;
 }
 
-.home-content h1 {
+.home-content h1,
+.about-content h1 {
 	font-size: 40px; /* Modified font size for smaller screens */
 	font-weight: 700;
 	line-height: 1.2;
@@ -85,10 +88,20 @@ body {
 	position: relative;
 }
 
-.home-content p {
+.home-content p,
+.about-content p{
 	font-size: 16px;
 	margin: 20px 0 30px; /* Modified margin for smaller screens */
 	position: relative;
+}
+
+.about-content p a {
+	color: #00abf0;
+	text-decoration: none;
+}
+
+.about-content p a:hover {
+	text-decoration: underline;
 }
 
 .home-content .btn-box {
@@ -211,7 +224,8 @@ body {
 	animation: showRight 1s ease 0.4s forwards;
 }
 
-.home-content h1::before {
+.home-content h1::before,
+.about-content h1::before {
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -234,7 +248,8 @@ body {
 
 }
 
-.home-content p::before {
+.home-content p::before,
+.about-content p::before {
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -288,11 +303,13 @@ body {
 		margin-left: 15px;
 	}
 
-	.home {
+	.home,
+	.about {
 		padding: 0 3%;
 	}
 
-	.home-content h1 {
+	.home-content h1,
+	.about-content h1 {
 		font-size: 32px;
 	}
 
@@ -300,7 +317,8 @@ body {
 		font-size: 20px;
 	}
 
-	.home-content p {
+	.home-content p,
+	.about-content p {
 		margin-bottom: 20px;
 	}
 
@@ -336,11 +354,13 @@ body {
 		margin-left: 10px;
 	}
 
-	.home {
+	.home,
+	.about {
 		padding: 0 3%;
 	}
 
-	.home-content h1 {
+	.home-content h1,
+	.about-content h1 {
 		font-size: 28px;
 	}
 
@@ -348,7 +368,8 @@ body {
 		font-size: 18px;
 	}
 
-	.home-content p {
+	.home-content p,
+	.about-content p {
 		margin-bottom: 15px;
 	}
 
