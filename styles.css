@@ -61,38 +61,60 @@ body {
 /* Sections */
 
 .home,
-.about {
+.about,
+.services {
 	min-height: 100vh; /* Modified height to accommodate smaller screens */
 	display: flex;
 	align-items: center;
 	padding: 0 5%; /* Modified padding for smaller screens */
 }
 
+.services {
+	justify-content: center;
+	text-align: center;
+}
+
 .home-content,
-.about-content {
+.about-content,
+.services-content {
 	max-width: 600px;
 }
 
+.services-content {
+	margin-top: 55px;
+}
+
 .home-content h1,
-.about-content h1 {
+.about-content h1,
+.services-content h1 {
 	font-size: 40px; /* Modified font size for smaller screens */
 	font-weight: 700;
 	line-height: 1.2;
 	position: relative;
 }
 
-.home-content h3 {
+.home-content h3,
+.services .services-content .service-card h3 {
 	font-size: 24px; /* Modified font size for smaller screens */
 	font-weight: 700px;
 	color: #00abf0;
 	position: relative;
 }
 
+.service-card h3 {
+	margin-top: 20px;
+}
+
 .home-content p,
-.about-content p{
+.about-content p,
+.services .services-content .service-card p{
 	font-size: 16px;
 	margin: 20px 0 30px; /* Modified margin for smaller screens */
 	position: relative;
+}
+
+.service-card {
+	text-align: center;
 }
 
 .about-content p a {
@@ -178,8 +200,8 @@ body {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 30px; /* Modified width for smaller screens */
-	height: 30px; /* Modified height for smaller screens */
+	width: 40px;
+	height: 40px; 
 	background: transparent;
 	border: 2px solid #00abf0;
 	border-radius: 50%;
@@ -225,7 +247,8 @@ body {
 }
 
 .home-content h1::before,
-.about-content h1::before {
+.about-content h1::before,
+.services-content h1::before {
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -236,7 +259,8 @@ body {
 	animation: showRight 1s ease 1s forwards;
 }
 
-.home-content h3::before {
+.home-content h3::before,
+.service-card h3::before {
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -249,7 +273,8 @@ body {
 }
 
 .home-content p::before,
-.about-content p::before {
+.about-content p::before,
+.service-card p::before {
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -304,21 +329,25 @@ body {
 	}
 
 	.home,
-	.about {
+	.about,
+	.services {
 		padding: 0 3%;
 	}
 
 	.home-content h1,
-	.about-content h1 {
+	.about-content h1,
+	.services-content h1 {
 		font-size: 32px;
 	}
 
-	.home-content h3 {
+	.home-content h3,
+	.service-card h3 {
 		font-size: 20px;
 	}
 
 	.home-content p,
-	.about-content p {
+	.about-content p,
+	.service-card p {
 		margin-bottom: 20px;
 	}
 
@@ -355,21 +384,25 @@ body {
 	}
 
 	.home,
-	.about {
+	.about,
+	.services {
 		padding: 0 3%;
 	}
 
 	.home-content h1,
-	.about-content h1 {
+	.about-content h1,
+	.services-content h1 {
 		font-size: 28px;
 	}
 
-	.home-content h3 {
+	.home-content h3,
+	.service-card h3 {
 		font-size: 18px;
 	}
 
 	.home-content p,
-	.about-content p {
+	.about-content p,
+	.service-card p {
 		margin-bottom: 15px;
 	}
 
