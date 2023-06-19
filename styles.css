@@ -62,7 +62,8 @@ body {
 
 .home,
 .about,
-.services {
+.services,
+.contact {
 	min-height: 100vh; /* Modified height to accommodate smaller screens */
 	display: flex;
 	align-items: center;
@@ -76,7 +77,8 @@ body {
 
 .home-content,
 .about-content,
-.services-content {
+.services-content,
+.contact-content {
 	max-width: 600px;
 }
 
@@ -87,7 +89,8 @@ body {
 .home-content h1,
 .about-content h1,
 .services-content h1,
-.portfolio h1 {
+.portfolio h1,
+.contact-content h1 {
 	font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
@@ -108,7 +111,8 @@ body {
 
 .home-content p,
 .about-content p,
-.service-card p{
+.service-card p,
+.contact-content p{
 	font-size: 16px;
     margin: 20px 0 40px;
     position: relative;
@@ -285,6 +289,41 @@ body {
 	text-decoration: underline;
 }
 
+/* Contact Form */
+
+.contact-form {
+	position: relative;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #ededed;
+  color: #081b29;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #00abf0;
+  color: #081b29;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #081b29;
+  color: #ededed;
+}
+
+
 /* Transitions and Animations */
 
 .logo::before,
@@ -302,7 +341,8 @@ body {
 .home-content h1::before,
 .about-content h1::before,
 .services-content h1::before,
-.portfolio h1::before {
+.portfolio h1::before,
+.contact-content h1::before {
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -330,7 +370,8 @@ body {
 .home-content p::before,
 .about-content p::before,
 .service-card p::before,
-.portfolio-grid h3 a::before {
+.portfolio-grid h3 a::before,
+.contact-content p::before {
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -341,7 +382,8 @@ body {
 	animation: showRight 1s ease 1.6s forwards;
 }
 
-.home-content .btn-box::before {
+.home-content .btn-box::before,
+.contact-form::before {
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -353,7 +395,7 @@ body {
 	z-index: 2;
 }
 
-.home-sci::before {
+.home-sci::before{
 	content: '';
 	position: absolute;
 	background: #081b29;
@@ -387,14 +429,16 @@ body {
 
 	.home,
 	.about,
-	.services {
+	.services,
+	.contact {
 		padding: 0 3%;
 	}
 
 	.home-content h1,
 	.about-content h1,
 	.services-content h1,
-	.portfolio h1 {
+	.portfolio h1,
+	.contact-content h1 {
 		font-size: 32px;
 	}
 
@@ -405,7 +449,8 @@ body {
 
 	.home-content p,
 	.about-content p,
-	.service-card p {
+	.service-card p,
+	.contact-content p {
 		margin-bottom: 20px;
 	}
 
@@ -430,7 +475,13 @@ body {
 		font-size: 16px;
 		border: 1px solid #00abf0;
 	}
+    
+    .contact-form {
+        max-width: 100%;
+    }
 }
+
+
 
 @media only screen and (max-width: 480px) {
 	.header {
@@ -444,14 +495,16 @@ body {
 
 	.home,
 	.about,
-	.services {
+	.services,
+	.contact {
 		padding: 0 3%;
 	}
 
 	.home-content h1,
 	.about-content h1,
 	.services-content h1,
-	.portfolio h1 {
+	.portfolio h1,
+	.contact-content h1 {
 		font-size: 28px;
 	}
 
@@ -462,7 +515,8 @@ body {
 
 	.home-content p,
 	.about-content p,
-	.service-card p {
+	.service-card p,
+	.contact-content p {
 		margin-bottom: 15px;
 	}
 
@@ -486,5 +540,9 @@ body {
 		height: 20px;
 		font-size: 14px;
 		border: 1px solid #00abf0;
+	}
+
+	.contact-form {
+		max-width: 100%;
 	}
 }
