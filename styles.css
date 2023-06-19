@@ -276,6 +276,11 @@ body {
     text-decoration: none;
 }
 
+.portfolio-grid h3 a:hover {
+	font-style: italic;
+	text-decoration: underline;
+}
+
 /* Transitions and Animations */
 
 .logo::before,
