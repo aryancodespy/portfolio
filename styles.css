@@ -95,7 +95,7 @@ body {
 }
 
 .home-content h3,
-.services .services-content .service-card h3 {
+.service-card h3 {
 	font-size: 32px;
     font-weight: 700;
     color: #00abf0;
@@ -108,14 +108,10 @@ body {
 
 .home-content p,
 .about-content p,
-.services .services-content .service-card p{
+.service-card p{
 	font-size: 16px;
     margin: 20px 0 40px;
     position: relative;
-}
-
-.service-card {
-	text-align: center;
 }
 
 .about-content p a {
