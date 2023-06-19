@@ -73,6 +73,7 @@ body {
 .services {
 	justify-content: center;
 	text-align: center;
+	margin-top: 56px;
 }
 
 .home-content,
