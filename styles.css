@@ -421,6 +421,8 @@ body {
 @media only screen and (max-width: 768px) {
 	.header {
 		padding: 20px 3%;
+		display: block;
+		text-align: center;
 	}
 
 	.navbar a {
@@ -487,6 +489,8 @@ body {
 @media only screen and (max-width: 480px) {
 	.header {
 		padding: 15px 3%;
+		display: block;
+		text-align: center;
 	}
 
 	.navbar a {
