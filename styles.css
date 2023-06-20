@@ -503,13 +503,6 @@ body {
 		padding: 0 3%;
 	}
 
-	.about {
-		margin-top: 56px;
-	}
-	.contact {
-		margin-top: 50px;
-	}
-
 	.home-content h1,
 	.about-content h1,
 	.services-content h1,
@@ -574,6 +567,13 @@ body {
 	.services,
 	.contact {
 		padding: 0 3%;
+	}
+
+	.about-content {
+		margin-top: 56px;
+	}
+	.contact {
+		margin-top: 56px;
 	}
 
 	.home-content h1,
