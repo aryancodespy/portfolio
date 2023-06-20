@@ -416,18 +416,13 @@ body {
 	}
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 	.header {
 		padding: 20px 3%;
-		display: block;
-		text-align: center;
 	}
 
 	.navbar a {
 		margin-left: 15px;
-		font-size: 14px;
 	}
 
 	.home,
@@ -478,15 +473,13 @@ body {
 		font-size: 16px;
 		border: 1px solid #00abf0;
 	}
-    
-    .contact-form {
-        max-width: 100%;
-    }
+
+	.contact-form {
+		max-width: 100%;
+	}
 }
 
-
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 	.header {
 		padding: 15px 3%;
 		display: block;
@@ -544,6 +537,72 @@ body {
 		width: 20px;
 		height: 20px;
 		font-size: 14px;
+		border: 1px solid #00abf0;
+	}
+
+	.contact-form {
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.header {
+		padding: 15px 3%;
+		display: block;
+		text-align: center;
+	}
+
+	.navbar a {
+		margin-left: 10px;
+		font-size: 14px;
+	}
+
+	.home,
+	.about,
+	.services,
+	.contact {
+		padding: 0 3%;
+	}
+
+	.home-content h1,
+	.about-content h1,
+	.services-content h1,
+	.portfolio h1,
+	.contact-content h1 {
+		font-size: 24px;
+	}
+
+	.home-content h3,
+	.service-card h3 {
+		font-size: 16px;
+	}
+
+	.home-content p,
+	.about-content p,
+	.service-card p,
+	.contact-content p {
+		margin-bottom: 10px;
+	}
+
+	.home-content .btn-box {
+		width: 150px;
+		height: 25px;
+	}
+
+	.btn-box a {
+		width: 70px;
+		font-size: 10px;
+	}
+
+	.home-sci {
+		bottom: 10px;
+		width: 80px;
+	}
+
+	.home-sci a {
+		width: 15px;
+		height: 15px;
+		font-size: 12px;
 		border: 1px solid #00abf0;
 	}
 
