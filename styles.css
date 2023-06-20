@@ -76,6 +76,11 @@ body {
 	margin-top: 56px;
 }
 
+.about,
+.contact {
+	margin-top: 56px;
+}
+
 .home-content,
 .about-content,
 .services-content,
@@ -498,7 +503,9 @@ body {
 		padding: 0 3%;
 	}
 
-	.about,
+	.about {
+		margin-top: 56px;
+	}
 	.contact {
 		margin-top: 50px;
 	}
