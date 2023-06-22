@@ -40,3 +40,26 @@ window.onscroll = () => {
     navBar.classList.remove("active");    
 
 };
+
+/* ---------------------------------Scroll Reveal ------------------------------- */
+ScrollReveal({ 
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-content, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+/*-------------------------------------- Typed Js --------------------------------------------*/
+
+const typed = new  Typed('.multi-text', {
+    strings: ['Frontend Developer', 'Full Stack Aspirant'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
