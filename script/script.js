@@ -1,4 +1,15 @@
-// scroll sections active link
+/*-------------------------- navbar toogle icon ------------------------ */
+
+let menuIcon = document.querySelector("#menu-icon");
+let navBar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x");
+    navBar.classList.toggle("active");
+
+}
+
+/*-------------------------- scroll sections active link ------------------------ */
 
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
@@ -17,4 +28,15 @@ window.onscroll = () => {
             });
         }
     });
-}
+
+    /*-------------------------- sticky navbar ------------------------ */
+
+    let header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 100);
+
+    /*-------------------------- remove toogle icon and navbar when clicked on navbar link ------------------------ */
+
+    menuIcon.classList.remove("bx-x");
+    navBar.classList.remove("active");    
+
+};
