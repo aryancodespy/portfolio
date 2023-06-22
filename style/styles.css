@@ -43,7 +43,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
-	background: transparent;
+	background: rgba(31, 36, 45, 0.9);
 }
 
 .logo {
@@ -107,13 +107,13 @@ span {
 	line-height: 1.5;
 }
 
-.home-img img{
+/* .home-img img{
 	border-radius: 50%;
 	border: 1px solid var(--main-color);
 	background: var(--main-color);
 	box-shadow: 0 2rem 2rem var(--main-color);
 	width: 35vw;
-}
+} */
 
 .home-content p {
 	font-size: 1.6rem;
@@ -157,13 +157,13 @@ span {
 }
 
 /* About */
-.about-img img {
+/* .about-img img {
 	border-radius: 50%;
 	border: 10px solid var(--main-color);
 	background: var(--bg-color);
 	box-shadow: 0 0 2rem var(--main-color);
 	width: 35vw;
-}
+} */
 
 .about {
 	display: flex;
@@ -191,6 +191,8 @@ span {
 	font-size: 1.6rem;
 	margin: 2rem 0 3rem;
 }
+
+/* Services */
 
 .services h2 {
 	margin-bottom: 5rem;
@@ -231,4 +233,83 @@ span {
 .service-card p {
 	font-size: 1.6rem;
 	margin: 1rem 0 3rem;
+}
+
+/* Portfolio */
+
+.portfolio {
+	background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+	margin-bottom: 4rem;
+}
+
+.portfolio-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-content {
+	position: relative;
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem var(--bg-color);
+	overflow: hidden;
+	display: flex;
+}
+
+.portfolio-content img {
+	width: 100%;
+	transition: 0.5s ease;
+}
+
+.portfolio-content:hover img {
+	transform: scale(1.1);
+}
+
+.portfolio-content .portfolio-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4rem;
+	transform: translateY(100%);
+	transition: 0.5s ease;
+}
+
+.portfolio-content:hover .portfolio-layer {
+	transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+	font-size: 3rem;
+}
+
+.portfolio-layer p {
+	font-size: 1.6rem;
+	margin: 0.3rem 0 1rem
+}
+
+.portfolio-layer a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	background: var(--text-color);
+	border-radius: 50%;
+}
+
+.portfolio-layer a i {
+	font-size: 2rem;
+	color: var(--second-bg-color);
 }
