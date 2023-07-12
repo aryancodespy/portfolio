@@ -343,13 +343,21 @@ span {
 
 /* Blog */
 
+.blog {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 .blog h2 {
 	margin-bottom: 4rem;
 }
 
 .blog-container {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	gap: 2.5rem;
 }
@@ -393,7 +401,7 @@ span {
 }
 
 .blog-layer h4 {
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 
 .blog-layer a {
@@ -416,12 +424,7 @@ span {
 }
 
 .blog .btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 200px;
-	margin: auto;
-	margin-top: 2rem;
+	margin: 2rem auto;
 }
 
 /* Contact */
