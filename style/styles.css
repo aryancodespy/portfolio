@@ -337,7 +337,98 @@ span {
 	color: var(--second-bg-color);
 }
 
+.portfolio-layer a i:hover {
+	color: var(--main-color);
+}
+
+/* Blog */
+
+.blog h2 {
+	margin-bottom: 4rem;
+}
+
+.blog-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.blog-content {
+	position: relative;
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem var(--bg-color);
+	overflow: hidden;
+	display: flex;
+}
+
+.blog-content img {
+	width: 100%;
+	transition: 0.5s ease;
+}
+
+.blog-content:hover img {
+	transform: scale(1.1);
+}
+
+.blog-content .blog-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4rem;
+	transform: translateY(100%);
+	transition: 0.5s ease;
+}
+
+.blog-content:hover .blog-layer {
+	transform: translateY(0);
+}
+
+.blog-layer h4 {
+	font-size: 2rem;
+}
+
+.blog-layer a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	background: var(--text-color);
+	border-radius: 50%;
+}
+
+.blog-layer a i {
+	font-size: 2rem;
+	color: var(--second-bg-color);
+}
+
+.blog-layer a i:hover {
+	color: var(--main-color);
+}
+
+.blog .btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	margin: auto;
+	margin-top: 2rem;
+}
+
 /* Contact */
+
+.contact {
+	background: var(--second-bg-color);
+}
 
 .contact h2 {
 	margin-bottom: 3rem;
@@ -362,7 +453,7 @@ span {
 	padding: 1.5rem;
 	font-size: 1.6rem;
 	color: var(--text-color);
-	background: var(--second-bg-color);
+	background: var(--bg-color);
 	border-radius: 0.8rem;
 	margin: 0.7rem 0;
 }
@@ -388,7 +479,6 @@ span {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 2rem 9%;
-	background: var(--second-bg-color);
 }
 
 .footer-text {
@@ -497,7 +587,7 @@ span {
 		margin-bottom: 3rem;
 	}
 
-	.portfolio h2 {
+	.portfolio h2, .blog h2 {
 		margin-bottom: 3rem;
 	}
 
@@ -509,7 +599,7 @@ span {
 }
 
 @media (max-width: 617px){
-	.portfolio-container {
+	.portfolio-container, .blog-container {
 		grid-template-columns: 1fr;
 	}
 }
