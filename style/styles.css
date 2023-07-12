@@ -528,6 +528,10 @@ span {
 		padding-bottom: 7rem;
 	}
 
+	.blog-container {
+		grid-template-columns: 1fr;
+	}
+
 	.contact {
 		min-height: auto;
 	}
@@ -602,7 +606,7 @@ span {
 }
 
 @media (max-width: 617px){
-	.portfolio-container, .blog-container {
+	.portfolio-container {
 		grid-template-columns: 1fr;
 	}
 }
