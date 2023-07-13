@@ -77,6 +77,11 @@ body {
 	font-size: 3.6rem;
 	color: var(--text-color);
 	display: none;
+	transition: 0.5s ease;
+}
+
+#menu-icon:hover {
+	color: var(--main-color);
 }
 
 /* Sections */
@@ -215,7 +220,7 @@ span {
 	margin: 2rem 0 3rem;
 }
 
-/* Services */
+/* Services 
 
 .services h2 {
 	margin-bottom: 5rem;
@@ -256,12 +261,12 @@ span {
 .service-card p {
 	font-size: 1.6rem;
 	margin: 1rem 0 3rem;
-}
+}*/
 
 /* Portfolio */
 
 .portfolio {
-	background: var(--second-bg-color);
+	background: var(--bg-color);
 }
 
 .portfolio h2 {
@@ -278,7 +283,7 @@ span {
 .portfolio-container .portfolio-content {
 	position: relative;
 	border-radius: 2rem;
-	box-shadow: 0 0 1rem var(--bg-color);
+	box-shadow: 0 0 1rem var(--main-color);
 	overflow: hidden;
 	display: flex;
 }
@@ -349,6 +354,7 @@ span {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	background: var(--second-bg-color);
 }
 
 .blog h2 {
@@ -365,7 +371,7 @@ span {
 .blog-content {
 	position: relative;
 	border-radius: 2rem;
-	box-shadow: 0 0 1rem var(--bg-color);
+	box-shadow: 0 0 1rem var(--main-color);
 	overflow: hidden;
 	display: flex;
 }
@@ -430,7 +436,7 @@ span {
 /* Contact */
 
 .contact {
-	background: var(--second-bg-color);
+	background: var(--bg-color);
 }
 
 .contact h2 {
@@ -456,9 +462,11 @@ span {
 	padding: 1.5rem;
 	font-size: 1.6rem;
 	color: var(--text-color);
-	background: var(--bg-color);
+	background: var(--second-bg-color);
 	border-radius: 0.8rem;
 	margin: 0.7rem 0;
+
+	border: 1px solid var(--main-color);
 }
 
 .contact form .input-box input {
