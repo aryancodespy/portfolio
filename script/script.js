@@ -49,10 +49,10 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .back-heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-content, .blog-content, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal(' .home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal(' .home-content p, .about-content, .blog .btn', { origin: 'right' });
+ScrollReveal().reveal('.home-content, .back-heading, .skill-container .card2', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .portfolio-content, .blog-content, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal(' .home-content h1, .about-img, .skill-container .card1', { origin: 'left' });
+ScrollReveal().reveal(' .home-content p, .about-content, .blog .btn, .skill-container .card3', { origin: 'right' });
 
 /*-------------------------------------- Typed Js --------------------------------------------*/
 
