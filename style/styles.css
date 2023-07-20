@@ -14,8 +14,8 @@
 }
 
 :root {
-	--bg-color: #1f242d;
-	--second-bg-color: #323946;
+	--bg-color: #000;
+	--second-bg-color: #131313;
 	--text-color: #fff;
 	--main-color: #0ef;
 }
@@ -44,7 +44,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
-	background: rgba(31, 36, 45, 0.9);
+	background: rgba(0, 0, 0, 0.9);
 }
 
 .header .sticky {
@@ -57,6 +57,42 @@ body {
 	color: var(--text-color);
 	font-weight: 600;
 	cursor: default;
+}
+
+.logo span {
+	position: absolute;
+	font-size:3rem;
+	font-weight: 700;
+	color: var(--text-color);
+	transform: translate(-50%, -50%);
+}
+
+.logo span:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke: 1px var(--main-color);
+}
+
+.logo span:nth-child(2){
+	color: var(--main-color);
+	-webkit-text-stroke: 1px var(--main-color);
+	animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%{
+		clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+		54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
+
+	50%{
+		clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
+		51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+	}
+
+	100%{
+		clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+		54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
 }
 
 .navbar a {
@@ -95,6 +131,13 @@ section {
 
 .home {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-content {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -145,6 +188,7 @@ span {
 
 .home-content p {
 	font-size: 1.6rem;
+	text-align: center;
 }
 
 .social-media a{
@@ -201,9 +245,17 @@ span {
 	background: var(--second-bg-color);
 }
 
+.about-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .heading {
 	text-align: center;
 	font-size: 4.5rem;
+	text-transform: uppercase;
 }
 
 .about-content h2 {
@@ -218,6 +270,7 @@ span {
 .about-content p {
 	font-size: 1.6rem;
 	margin: 2rem 0 3rem;
+	text-align: center;
 }
 
 /* Services 
