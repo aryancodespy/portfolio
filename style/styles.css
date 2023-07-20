@@ -306,9 +306,10 @@ span {
 	background: var(--second-bg-color);
 	padding: 3rem 2rem 4rem;
 	text-align: center;
-	border: 0.2rem solid var(--bg-color);
+	border: 0.2rem solid var(--second-bg-color);
 	border-radius: 2rem;
 	transition: 0.5s ease;
+	box-shadow: 0 0 1rem var(--main-color);
 }
 
 .skill-container .skill-card:hover {
