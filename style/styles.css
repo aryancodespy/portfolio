@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
 
 /* Reset Default Settings */
 
@@ -30,6 +30,30 @@ html {
 body {
 	background: var(--bg-color);
 	color: var(--text-color);
+}
+
+.back-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px  10px 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.back-heading .fade-heading {
+    opacity: 0.1;
+    font-size: 10rem;
+    position: relative;
+    text-transform: capitalize;
+	font-family: 'Great Vibes', cursive;
+}
+
+.front-heading {
+    position: absolute;
+    font-size: 2rem;
+    text-shadow: 0 0 1rem black;
+    text-transform: uppercase;
 }
 
 /* Header */
@@ -245,16 +269,6 @@ span {
 	align-items: center;
 }
 
-.heading {
-	text-align: center;
-	font-size: 4.5rem;
-	text-transform: uppercase;
-}
-
-.about-content h2 {
-	text-align: left;
-	line-height: 1.2;
-}
 
 .about-content h3 {
 	font-size: 2.6rem;
@@ -265,6 +279,11 @@ span {
 	margin: 2rem 0 3rem;
 	text-align: center;
 }
+
+.about .back-heading {
+    margin-bottom: 10px;
+}
+
 
 /* Services 
 
@@ -313,10 +332,6 @@ span {
 
 .portfolio {
 	background: var(--bg-color);
-}
-
-.portfolio h2 {
-	margin-bottom: 4rem;
 }
 
 .portfolio-container {
@@ -403,9 +418,7 @@ span {
 	background: var(--second-bg-color);
 }
 
-.blog h2 {
-	margin-bottom: 4rem;
-}
+
 
 .blog-container {
 	display: grid;
@@ -485,9 +498,6 @@ span {
 	background: var(--bg-color);
 }
 
-.contact h2 {
-	margin-bottom: 3rem;
-}
 
 .contact form {
 	max-width: 70rem;
@@ -653,9 +663,6 @@ span {
 		margin-bottom: 3rem;
 	}
 
-	.portfolio h2, .blog h2 {
-		margin-bottom: 3rem;
-	}
 
 	/* UNCOMMENT WHEN PROJECT MORE THAN 6 */
 
