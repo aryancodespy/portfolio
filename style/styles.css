@@ -596,6 +596,11 @@ span {
 }
 
 @media (max-width: 768px) {
+
+	.logo {
+		display: block;
+		margin: auto;
+	}
 	
 	#menu-icon {
 		display: block;
