@@ -291,13 +291,9 @@ span {
 }
 
 
-/* Services 
+/* Skills  */
 
-.services h2 {
-	margin-bottom: 5rem;
-}
-
-.services-container {
+.skill-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -305,7 +301,7 @@ span {
 	gap: 2rem;
 }
 
-.services-container .service-card {
+.skill-container .skill-card {
 	flex: 1 1 30rem;
 	background: var(--second-bg-color);
 	padding: 3rem 2rem 4rem;
@@ -315,29 +311,53 @@ span {
 	transition: 0.5s ease;
 }
 
-.services-container .service-card:hover {
+.skill-container .skill-card:hover {
 	border-color: var(--main-color);
 	transform: scale(1.02);
 }
 
-.service-card i {
+.skill-card i {
 	font-size: 7rem;
 	color: var(--main-color);
 }
 
-.service-card h3 {
+.skill-card h3 {
 	font-size: 2.6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.service-card p {
-	font-size: 1.6rem;
+.skill-card:nth-child(3) h3 {
+	font-size: 2.5rem;
+}
+
+.skill-card .bar {
 	margin: 1rem 0 3rem;
-}*/
+	width: 100%;
+	height: 5px;
+	border-radius: 4rem;
+	border: 1px solid;
+	box-shadow: 0 0 1rem var(--main-color);
+} 
+
+#bar1 {
+	background: linear-gradient(90deg, var(--main-color) 95%, transparent 5%);
+}
+
+#bar2 {
+	background: linear-gradient(90deg, var(--main-color) 90%, transparent 10%);
+}
+
+#bar3 {
+	background: linear-gradient(90deg, var(--main-color) 85%, transparent 15%);
+}
 
 /* Portfolio */
 
 .portfolio {
-	background: var(--bg-color);
+	background: var(--second-bg-color);
 }
 
 .portfolio-container {
@@ -421,10 +441,8 @@ span {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	background: var(--second-bg-color);
+	background: var(--bg-color);
 }
-
-
 
 .blog-container {
 	display: grid;
@@ -501,7 +519,7 @@ span {
 /* Contact */
 
 .contact {
-	background: var(--bg-color);
+	background: var(--second-bg-color);
 }
 
 
@@ -594,7 +612,7 @@ span {
 		padding: 10rem 3% 2rem;
 	}
 
-	.services, .portfolio {
+	.skills, .portfolio {
 		padding-bottom: 7rem;
 	}
 
@@ -664,11 +682,6 @@ span {
 	.about {
 		flex-direction: column-reverse;
 	}
-
-	.services h2 {
-		margin-bottom: 3rem;
-	}
-
 
 	/* UNCOMMENT WHEN PROJECT MORE THAN 6 */
 
