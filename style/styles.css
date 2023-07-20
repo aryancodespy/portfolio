@@ -75,6 +75,10 @@ body {
 	border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
+.logo {
+	margin-left: 50px;
+}
+
 .logo span {
 	position: absolute;
 	font-size: 3.5rem;
